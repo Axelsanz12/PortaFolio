@@ -231,12 +231,12 @@ video {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    font-size: 160%;
+    font-size: 100%;
 }
 
 .whatsapp-link i {
     margin-right: 9px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 strong {
