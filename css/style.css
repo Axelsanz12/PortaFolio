@@ -1,0 +1,280 @@
+/* Estilo General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #2c3e50, #34495e);
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Cambio para mejor responsividad */
+    margin: 10px; /* Margen para separación */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección "Sobre mí" */
+section#sobre-mi {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center; /* Centrado del texto */
+}
+
+section#sobre-mi h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+section#sobre-mi p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsiva */
+    gap: 1%;
+    padding: 20px; /* Espacio alrededor de la galería */
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+
+/* Sección "Mis Proyectos" */
+section#proyectos {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center; /* Centrado del texto */
+}
+
+section#proyectos h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#proyecto {
+    text-align: center;
+    padding: 20px;
+}
+
+.proyecto {
+    margin: 20px;
+    display: inline-block;
+    width: 100%;
+    max-width: 45%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#proyectos .proyecto img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Sección "Contacto" */
+section#contacto {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section#contacto h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+section#contacto ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+section#contacto ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+}
+
+section#contacto ul li i {
+    margin-right: 10px;
+}
+
+section#contacto p {
+    font-size: 1.5em;
+}
+
+section#contacto p a {
+    color: white;
+    text-decoration: double;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Cursos */
+#cursos {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+#cursos h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.cursos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.curso {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.curso img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.curso p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: white;
+}
+
+.curso:hover {
+    transform: scale(1.05);
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%;
+    height: auto;
+}
+
+.whatsapp-link {
+    margin: 2%;
+    color: #25D366;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 160%;
+}
+
+.whatsapp-link i {
+    margin-right: 9px;
+    font-size: 1.2em;
+}
+
+strong {
+    font-size: 160%;
+    margin: 2%;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section#sobre-mi h2,
+    section#proyectos h2,
+    section#contacto h2 {
+        font-size: 1.8em;
+    }
+
+    .proyecto {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section#contacto ul {
+        flex-direction: column; /* Apila los enlaces en columnas */
+        align-items: center; /* Centra los enlaces */
+    }
+
+    section#contacto ul li {
+        margin: 10px 0; /* Espacio entre los enlaces */
+    }
+
+    video {
+        max-width: 100%; /* El video ocupa todo el ancho */
+    }
+}
